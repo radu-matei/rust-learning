@@ -3,6 +3,9 @@ resources:
   - container: rust_build
     image: rust:1.30.0-stretch
 
+pool:
+  vmImage: 'ubuntu-16.04'
+
 container: rust_build
 steps:
 - script: make build
