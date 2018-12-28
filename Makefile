@@ -5,4 +5,4 @@ build : $(SUBDIRS)
 
 $(SUBDIRS) :
 	cd $@ && \
-	rustc *.rs
+	cargo build
